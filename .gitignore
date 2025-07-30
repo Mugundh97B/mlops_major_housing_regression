@@ -1,0 +1,11 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+
+# OS junk
+.DS_Store
+
+# Docker
+*.tar
