@@ -14,7 +14,7 @@ This project is built for the **MLOps Major Assignment** at IIT Jodhpur. It demo
 
 ---
 
-## 📈 R² Score and File Size Comparison
+## R² Score and File Size Comparison
 
 | Stage                | Description                  | File                          | R² Score       | Size (bytes) |
 |---------------------|------------------------------|-------------------------------|----------------|--------------|
@@ -22,7 +22,7 @@ This project is built for the **MLOps Major Assignment** at IIT Jodhpur. It demo
 | **Unquantized Params** | Raw coef + intercept (float64) | params/unquant_params.joblib | N/A             | 414        |
 | **Quantized Params** | Manually quantized to `uint8` | params/quant_params.joblib  | -18.0787    | 526        |
 
-### 🔍 Analysis:
+### Analysis:
 - The trained model achieves a solid R² of `0.6062`, which reflects good performance on the dataset.
 - Quantization caused a **major drop in accuracy**, likely due to aggressive conversion to `uint8`.
 - File sizes are very small in all stages, but **quantized model is not usable for inference** in its current form.
